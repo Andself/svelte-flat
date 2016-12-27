@@ -32,10 +32,10 @@ module.exports = {
       {
         test: /\.js[x]?$/,
         loader: 'babel-loader',
-        exclude: [/node_modules/]
+        exclude: /node_modules/
       },
       {
-        test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+        test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4)(\?.*)?$/,
         loader: 'file-loader?limit=8192'
       }
     ]
